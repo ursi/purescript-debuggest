@@ -4,6 +4,8 @@ module Debug
   , logShow
   , taggedLogShow
   , taggedLog
+  , taggedTodo
+  , todo
   ) where
 
 import Prelude
