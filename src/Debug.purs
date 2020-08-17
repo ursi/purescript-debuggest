@@ -7,6 +7,7 @@ module Debug
   ) where
 
 import Prelude
+import Unsafe.Coerce (unsafeCoerce)
 
 foreign import log :: ∀ a. a -> a
 
@@ -26,3 +27,9 @@ taggedLogShow :: ∀ a. Show a => String -> a -> a
 taggedLogShow = taggedLogShowImpl show
 
 foreign import debugger :: ∀ a. a -> a
+
+todo :: ∀ a. a
+todo = unsafeCoerce unit
+
+taggedTodo :: ∀ a. String -> a
+taggedTodo = unsafeCoerce
