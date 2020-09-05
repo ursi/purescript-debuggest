@@ -4,7 +4,6 @@ module Debug
   , logShow
   , taggedLogShow
   , taggedLog
-  , taggedTodo
   , todo
   ) where
 
@@ -32,6 +31,3 @@ foreign import debugger :: ∀ a. a -> a
 
 todo :: ∀ a. a
 todo = unsafeCoerce unit
-
-taggedTodo :: ∀ a. String -> a
-taggedTodo = unsafeCoerce
