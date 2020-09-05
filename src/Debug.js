@@ -3,6 +3,11 @@ exports.debugger = a => {
 	return a;
 };
 
+exports.dir = a => {
+	console.dir(a);
+	return a;
+};
+
 exports.log = a => {
 	console.log(a);
 	return a;

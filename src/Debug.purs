@@ -1,5 +1,6 @@
 module Debug
   ( debugger
+  , dir
   , log
   , logShow
   , taggedLogShow
@@ -11,6 +12,8 @@ import Prelude
 import Unsafe.Coerce (unsafeCoerce)
 
 foreign import debugger :: ∀ a. a -> a
+
+foreign import dir :: ∀ a. a -> a
 
 foreign import log :: ∀ a. a -> a
 
