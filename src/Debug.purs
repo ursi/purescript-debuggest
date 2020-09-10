@@ -6,6 +6,8 @@ module Debug
   , taggedLogShow
   , taggedLog
   , todo
+  , unsafeLog
+  , unsafeDir
   ) where
 
 import Prelude
@@ -34,3 +36,9 @@ taggedLogShow = taggedLogShowImpl show
 
 todo :: ∀ a. a
 todo = unsafeCoerce unit
+
+unsafeLog :: ∀ a b. a -> b
+unsafeLog = unsafeCoerce <<< log
+
+unsafeDir :: ∀ a b. a -> b
+unsafeDir = unsafeCoerce <<< dir
