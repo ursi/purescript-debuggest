@@ -1,1 +1,1 @@
-A debugging library based on Elm's [Debug](https://package.elm-lang.org/packages/elm/core/latest/Debug).
+On account of [debug](https://github.com/garyb/purescript-debug.git) and [debugger](https://github.com/paf31/purescript-debugger.git) already being taken, I present `debuggest` - a debugging library inspired by Elm's [Debug](https://package.elm-lang.org/packages/elm/core/latest/Debug).
