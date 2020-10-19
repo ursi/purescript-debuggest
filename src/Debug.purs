@@ -3,8 +3,8 @@ module Debug
   , dir
   , log
   , logShow
-  , taggedLogShow
   , taggedLog
+  , taggedLogShow
   , todo
   , unsafeLog
   , unsafeDir
