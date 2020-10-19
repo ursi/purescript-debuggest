@@ -1,0 +1,20 @@
+{
+    "name": "purescript-debuggest",
+    "license": [
+        "BSD-3-Clause"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ursi/purescript-debuggest.git"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "output"
+    ],
+    "dependencies": {
+        "purescript-prelude": "^v4.1.1",
+        "purescript-unsafe-coerce": "^v4.0.0"
+    }
+}
