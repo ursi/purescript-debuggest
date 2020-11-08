@@ -8,6 +8,7 @@ module Debug
   , debugger
   , unsafeLog
   , unsafeDir
+  , unsafeTodo
   ) where
 
 import Prelude
@@ -70,3 +71,7 @@ unsafeLog = unsafeCoerce <<< log
 -- | Like `dir` except it coerces the input to any type.
 unsafeDir :: ∀ a b. a -> b
 unsafeDir = unsafeCoerce <<< dir
+
+-- | Like `todo` but it doesn't throw an error.
+unsafeTodo :: ∀ a. a
+unsafeTodo = unsafeCoerce unit
