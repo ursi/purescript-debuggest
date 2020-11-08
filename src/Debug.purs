@@ -57,9 +57,11 @@ foreign import taggedLogShowImpl :: ∀ a. (a -> String) -> String -> a -> a
 taggedLogShow :: ∀ a. Show a => String -> a -> a
 taggedLogShow = taggedLogShowImpl show
 
--- | A placeholder to use when you want your code to compile without finishing something.
+foreign import todoImpl :: ∀ a b. a -> b
+
+-- | A placeholder to use when you want your code to compile without finishing something. You will immediately get an error when trying to run any code with a `todo`, so you won't forget about it and run into errors later.
 todo :: ∀ a. a
-todo = unsafeCoerce unit
+todo = todoImpl unit
 
 -- | Like `log` except it coerces the input to any type.
 unsafeLog :: ∀ a b. a -> b

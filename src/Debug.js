@@ -27,3 +27,7 @@ exports.taggedLogShowImpl = show => str => a => {
 	console.log(str, show(a));
 	return a;
 };
+
+exports.todoImpl = () => {
+	throw `You have used "Debug.todo" somewhere in your code. Remove it or use "Debug.unsafeTodo" to stop this error.`;
+};
