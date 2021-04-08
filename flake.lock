@@ -10,17 +10,33 @@
         "type": "github"
       },
       "original": {
-        "id": "flake-utils",
-        "type": "indirect"
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1605370193,
+        "narHash": "sha256-YyMTf3URDL/otKdKgtoMChu4vfVL3vCMkRqpGifhUn0=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5021eac20303a61fafe17224c087f5519baed54d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1606842859,
-        "narHash": "sha256-TOa8z86DrB4r1a1nqTCM6xujtGsa3fTa3h1hopiaoJU=",
+        "lastModified": 1617808887,
+        "narHash": "sha256-zXye++UlrWGhfRo01sg/ldE60MZYnhda/HK5Jaa7F7g=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "29528a11dadb87706c7b3d2ad86aa9e485f74a25",
+        "rev": "d1183f3dc44b9ee5134fcbcd45555c48aa678e93",
         "type": "github"
       },
       "original": {
@@ -28,10 +44,109 @@
         "type": "indirect"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1617784895,
+        "narHash": "sha256-gJOCUkf2Y1T8lFFjgw1zsNM+f0yQ1YEq3p31P8YUHHY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "de679c57ca579974f35fab5444c7892ceb16230a",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1608723372,
+        "narHash": "sha256-XoCD827n1+bBPVxjKFmAikh7KSIspj9BBj2vnWhtTC4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b67ba0bfcc714453cdeb8d713e35751eb8b4c8f4",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1608723372,
+        "narHash": "sha256-XoCD827n1+bBPVxjKFmAikh7KSIspj9BBj2vnWhtTC4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b67ba0bfcc714453cdeb8d713e35751eb8b4c8f4",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "purs-nix": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2",
+        "utils": "utils"
+      },
+      "locked": {
+        "lastModified": 1617921083,
+        "narHash": "sha256-rCopaAHSrl0pn2RY40pR2CEvaB/7jb+uieDNFCobP64=",
+        "owner": "ursi",
+        "repo": "purs-nix",
+        "rev": "d5fdb9624426a77d806f6c5ad5e4efc3ef1c3c56",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ursi",
+        "repo": "purs-nix",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
+        "nixpkgs": "nixpkgs",
+        "purs-nix": "purs-nix",
+        "utils": "utils_2"
+      }
+    },
+    "utils": {
+      "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1617670171,
+        "narHash": "sha256-qpaUJuAKJSD55+3PavpSc1xZglOdaHxHNRldUyE3m1A=",
+        "owner": "ursi",
+        "repo": "flake-utils",
+        "rev": "c67735b237ca8acf373dda0e72acfd8a94324507",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ursi",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "utils_2": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": "nixpkgs_4"
+      },
+      "locked": {
+        "lastModified": 1617670171,
+        "narHash": "sha256-qpaUJuAKJSD55+3PavpSc1xZglOdaHxHNRldUyE3m1A=",
+        "owner": "ursi",
+        "repo": "flake-utils",
+        "rev": "c67735b237ca8acf373dda0e72acfd8a94324507",
+        "type": "github"
+      },
+      "original": {
+        "id": "utils",
+        "type": "indirect"
       }
     }
   },
