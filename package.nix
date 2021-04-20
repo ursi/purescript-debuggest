@@ -1,6 +1,6 @@
 { ps-pkgs, licenses, ... }:
   with ps-pkgs;
-  { version = "0.4.0";
+  { version = "0.4.1";
     dependencies = [ prelude unsafe-coerce ];
 
     pursuit =
