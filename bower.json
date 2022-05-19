@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "purescript-prelude": "^v5.0.0",
-    "purescript-unsafe-coerce": "^v5.0.0"
+    "purescript-prelude": "^v6.0.0",
+    "purescript-unsafe-coerce": "^v6.0.0"
   },
   "ignore": [
     "**/.*",
