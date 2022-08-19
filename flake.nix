@@ -21,7 +21,12 @@
                      nodePackages.bower
                      nodePackages.pulp
                      purs-nix.purescript
-                     (command { inherit package; })
+
+                     (command
+                        { inherit package;
+                          bundle = { main = false; module = "Debug"; };
+                        }
+                     )
                    ];
                };
          }
