@@ -1,33 +1,35 @@
-exports const debugger = a => {
+const debugger_ = a => {
 	debugger;
 	return a;
 };
 
-exports const dir = a => {
+export { debugger_ as debugger }
+
+export const dir = a => {
 	console.dir(a);
 	return a;
 };
 
-exports const log = a => {
+export const log = a => {
 	console.log(a);
 	return a;
 };
 
-exports const logShowImpl = show => a => {
+export const logShowImpl = show => a => {
 	console.log(show(a));
 	return a;
 };
 
-exports const taggedLogImpl = str => a => {
+export const taggedLogImpl = str => a => {
 	console.log(str, a);
 	return a;
 };
 
-exports const taggedLogShowImpl = show => str => a => {
+export const taggedLogShowImpl = show => str => a => {
 	console.log(str, show(a));
 	return a;
 };
 
-exports const todoImpl = () => {
+export const todoImpl = () => {
 	throw `You have used "Debug.todo" somewhere in your code. Remove it or use "Debug.unsafeTodo" to stop this error.`;
 };
